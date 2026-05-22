@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "FinanceApp",
+    "slug": "financeapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#060A12"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Tire foto de comprovantes e gastos.",
+        "NSPhotoLibraryUsageDescription": "Selecione imagens da galeria para anexar a transações.",
+        "NSPhotoLibraryAddUsageDescription": "Salvar fotos de comprovantes."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#060A12"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-image-picker",
+      [
+        "expo-font",
+        {
+          "fonts": []
+        }
+      ]
+    ]
+  }
+}
